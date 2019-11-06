@@ -10,8 +10,8 @@ void get_com(void);
 void dis(void);
 char check(void);
 char* PutStr(const char *);                   /* this function output the string and return the length of the string ,we use this length to erase the string using Erase()
-                                                                this function will be used to output generally string (ex- enter any no) that may be frequently and we remove them*/
-void Erase(int );                   //Erase(length of string); uses '\b' to remove the previously return output , so that the looks and feels user friendly
+                                                                this function will be used to output some string (ex- enter any no.) that may be frequently used and we remove them*/
+void Erase(int );                   //Erase(length of string); uses '\b' to remove the previously return output , so that it looks and feels user friendly
 int main(void)
 {
     char done=' ';
@@ -124,7 +124,7 @@ char check(void)
     //if no pattern found
     return ' ';
 }
-/* i have created to different module for getting user input 1->get_user() it take array[x][y] x,y cords as matrix row and col and choose accordingly
+/* i have created two different module for getting user input 1->get_user() it take array[x][y] x,y cords as matrix row and col and choose accordingly
     while second one use the numpad on keyboard as input pad of user */
 // fetching response from the user
 void get_user(void)
